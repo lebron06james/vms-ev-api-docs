@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>OP Events Staging API - Changelogs</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+  <header>
+    <div></div>
+    <div>
+      <h3>Staging API Changelogs</h3>
+    </div>
+  </header>
+
+  <div id="page-container">
+    <h1>Changelogs</h1>
+    <section>
+      <div id="changelogs">
+        <div id="items">
+
+          <!-- new items goes here -->
+          
+          <div class="item" id="v1.0.0">
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Staging API Version 1.0.0</div>
+                  <div class="release-date">December 07 2023</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content">
+              <h3>Our first timeline release! 🎉</h3>
+
+              <div class="feature">
+                <blockquote>
+                  Important Update: Effective December 7, 2023, several significant changes have been introduced across all API endpoints. A notable modification requires that requests now include Authentication Headers with a valid JWT token, along with the introduction of a new JWT token login endpoint. Before utilizing API version v1.0.0, we strongly recommend reviewing the comprehensive <a href="#docs">API documentation available here</a> and thoroughly examining the corresponding release notes sections within this document.
+                </blockquote>
+              </div>
+
+              <!-- security fixes -->
+
+              <p><b>Security Fixes</b></p>
+              <div class="feature">
+                <div class="tag fixes">Fixes</div>
+                <p>Starting December 7, 2023, a JSON Web Token (JWT) has been integrated into all APIs. A valid JWT token is now mandatory for successful API consumption, addressing a security concern associated with an insecure API endpoint.</p>
+              </div>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p>In light of this update, a new login endpoint has been introduced. Users can utilize this endpoint to obtain a JWT token, which serves as the required Authentication Header for every subsequent API endpoint interaction. For detailed instructions on the proper usage of the login endpoint, please refer to the <a href="#docs">API documentation</a>.</p>
+              </div>
+              <div class="feature">
+                <div class="tag enhancements">Enhancement</div>
+                <p>Additionally, a Request Rate Limiter has been implemented across all API endpoints. This feature allows for a maximum of 100 requests per minute per endpoint, enhancing overall system stability and performance.</p>
+              </div>
+
+              <!-- 🙂 -->
+
+              <!-- bug fixes -->
+
+              <p><b>Bug Fixes</b></p>
+              <div class="feature">
+                <div class="tag fixes">Fixes</div>
+                <p>Enhanced the flexibility of the event type property in the <b>`add guest to event`</b> endpoint, allowing it to accept a broader range of values beyond just GUEST and VIP.</p>
+              </div>
+              <div class="feature">
+                <div class="tag fixes">Fixes</div>
+                <p>Standardized success and error responses across all endpoints, ensuring the use of universally recognized codes for success and error messages. Additionally, implemented clear and definitive error messages for improved understanding and troubleshooting.</p>
+              </div>
+
+              <!-- Changes -->
+
+              <p><b>Changes</b></p>
+              <div class="feature">
+                <div class="tag fixes">Fixes</div>
+                <p>Changes to add event Endpoint: The <b>event_entrance_gate</b> is no longer required in the request body for the add event endpoint. Please ensure that it is not included in your request.</p>
+              </div>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p>Enhancement in add guest to event Endpoint: The <b>attendee_id</b> field from the add guest to event endpoint now returns a secure hash string instead of a predictable integer value, enhancing data security.</p>
+              </div>
+              <div class="feature">
+                <div class="tag enhancements">Enhancement</div>
+                <p>API Endpoint Restructuring: All API endpoints have been relocated to their new versioned URLs to ensure proper API versioning and maintain backward compatibility. Refer to the respective API documentation for details.</p>
+              </div>
+
+
+              <p id="docs"><b>API Version 1.0.0 Documentation</b></p>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p><a href="#">Acquire JWT Token: Docs for universal API authentication.</a></p>
+              </div>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p><a href="#">Add Event Documentation</a></p>
+              </div>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p><a href="#">Add Guest to Event Documentation</a></p>
+              </div>
+              <div class="feature">
+                <div class="tag new">New</div>
+                <p><a href="#">Delete Guest Documentation</a></p>
+              </div>
+              <!-- Upcoming deprecation of OP Events Staging API #.#.# -->
+
+              <p><b>Upcoming deprecation of OP Events Staging API 0.0.1</b></p>
+
+              <div class="feature">
+                <div class="tag fixes">Deprecation</div>
+                <p><b>OP Events Staging API 0.0.1 will be deprecated as of December 07, 2023</b> That means that no patch releases will be made, even for critical security issues, after this date. For improved security, and new features, please use the newest version of OP Events Staging API as soon as possible.</p>
+                <!-- <p><b>OP Events Staging API 0.0.1 will be deprecated as of December 07, 2023</b> That means that no patch releases will be made, even for critical security issues, after this date. For better performance, improved security, and new features, please use the newest version of OP Events Staging API as soon as possible.</p> -->
+              </div>
+
+              <!-- Known Issues -->
+
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="timeline has-next">
+              <div>
+                <div class="meta">
+                  <div class="version">Version 0.0.1</div>
+                  <div class="release-date">2023</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content">
+              <h3>Welcome to our new way of sharing release notes!</h3>
+              <p>From here on out, this will be the go to place to see new changes!
+                <!-- Make sure to <b>subscribe</b> to never miss out on any thing going on.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="pagination" tabindex="0">See More</div> -->
+        <div id="pagination" tabindex="0"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 4l-11.245 14.374-11.219-14.374-.781.619 12 15.381 12-15.391-.755-.609z"/></svg></div>
+      </div>
+
+      <!-- <form id="subscribe">
+        <div>
+          <h2>Keep up to date!</h2>
+          <div>Want to be the first to hear about changes?</div>
+          <input type="text" id="email" name="email" placeholder="Email...">
+          <button class="button" type="button" id="submit">Subscribe</button>
+        </div>
+      </form> -->
+
+      <h2>Releases of OP Events Staging API</h2>
+      <br />
+      <div id="changelogs">
+        <p>OP Events Staging API provides documentation for both supported and deprecated versions of OP Events Staging API, but does not maintain or update the documentation for deprecated versions.</p>
+      
+        <p>For more information about the latest API release, see the <a href="#v1.0.0">OP Events Staging API</a> release notes.</p>
+      </div>
+      <br />
+      <div id="changelogs">
+        <div id="items">
+          
+          <!-- v1.0.0 -->
+          <div class="item">
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Version</div>
+                  <div class="release-date">1.0.0</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Release</div>
+                  <div class="release-date">2023-12-07</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Depracation</div>
+                  <div class="release-date">TBD</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Supported</div>
+                  <div class="release-date"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-check" aria-label="Supported" role="img"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"></path></svg></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Release notes</div>
+                  <div class="release-date"><a href="#v1.0.0">1.0.0 release notes</a></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Documentation</div>
+                  <div class="release-date"><a href="#">1.0.0 documentation</a></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+
+          </div>
+
+
+          <!-- v0.0.1 -->
+          <div class="item">
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Version</div>
+                  <div class="release-date">0.0.1</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Release</div>
+                  <div class="release-date">2023-10-01</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Depracation</div>
+                  <div class="release-date">2023-12-07</div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Supported</div>
+                  <div class="release-date"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon octicon-x" aria-label="Not supported" role="img"><path d="M3.72 3.72a.75.75 0 0 1 1.06 0L8 6.94l3.22-3.22a.749.749 0 0 1 1.275.326.749.749 0 0 1-.215.734L9.06 8l3.22 3.22a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215L8 9.06l-3.22 3.22a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042L6.94 8 3.72 4.78a.75.75 0 0 1 0-1.06Z"></path></svg></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Release notes</div>
+                  <div class="release-date"><a href="#">0.0.1 release notes</a></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+            <div class="timeline">
+              <div>
+                <div class="meta">
+                  <div class="version">Documentation</div>
+                  <div class="release-date"><a href="#">0.0.1 documentation</a></div>
+                </div>
+                <div class="connector">
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div class="content"></div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <footer>Copyright <span id="year"></span>, All Rights Reserved.</footer>
+  </div>
+
+</body>
+<!-- partial -->
+  <script src='https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&amp;family=Open+Sans:wght@400;700&amp;display=swap'></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
